@@ -22,7 +22,7 @@ struct AddView: View {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55.0)
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.03, brightness: 0.929)/*@END_MENU_TOKEN@*/)
+                    .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
                 
                 Button(action:saveButtonPressed , label: {
@@ -31,7 +31,7 @@ struct AddView: View {
                         .font(.headline)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+                        .background(Color.accentColor)
                         .cornerRadius(10)
                 })
                
